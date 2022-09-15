@@ -11,7 +11,7 @@ This is a project to demonstrate using Intern with Angular 13. It contains [all 
 * `Google Chrome` - Here is where I have been working, there is no compatibility problem.
 * `FireFox` - there is no compatibility problem.
 * `Internet Explorer` - It is a slightly obsolete browser for my taste, I do not recommend opening it here.
-* `Opera` - runs `tslint` there is no compatibility problem.
+* `Opera` - there is no compatibility problem.
 * `Microsoft Edge` - there is no compatibility problem.
 
 ### Built With
