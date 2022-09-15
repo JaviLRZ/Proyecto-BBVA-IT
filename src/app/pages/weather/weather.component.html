@@ -1,0 +1,83 @@
+<div class=" box text-white">
+  <div class="container marginBoxTop">
+      <div class="row">
+        <div class="col tempP">
+          {{weather.list[0].main.temp | number: '1.0-0'}}°
+        </div>
+        <div class="col abs-center">
+          <img src="{{BASE_URL}}/{{weather.list[0].weather[0].icon}}@2x.png" style="width: 120px;"  [alt]="ciudad">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ciudad">
+          {{ciudad}}
+        </div>
+      </div>
+      <div class="row">
+          <div class="col">
+              Today
+          </div>
+      </div>
+      <div class="row mt-2">
+            <div class="col-1">
+                {{weather.list[0].main.temp_max | number: '1.0-0'}}°            
+            </div>
+            <div class="col-1 temp2">
+                {{weather.list[0].main.temp_min | number: '1.0-0'}}°             
+            </div>
+            <div class="col-3 humidity">
+                Humidity: {{weather.list[0].main.humidity}}
+            </div>
+        </div>
+      <hr>
+  </div>
+  
+  <div class="container marginBoxBot">
+      <div class="row">
+          <div class="col-4">
+              <img class="img-center" src="{{BASE_URL}}/{{dayAux.weather[0].icon}}@2x.png" style="width:50px;" [alt]="">
+              <div class="col abs-center DiaSemana">
+                  {{diaSemana1}}
+              </div>
+              <div class="col abs-center letraP">
+                <div class="col-1 abs-center">
+                    {{dayAux.main.temp_max | number: '1.0-0'}}°            
+                </div>
+                <div class="col-1 temp2 abs-center">
+                    {{dayAux.main.temp_min | number: '1.0-0'}}°             
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-4">
+              <img class="img-center" src="{{BASE_URL}}/{{dayAux1.weather[0].icon}}@2x.png" style="width:50px;" [alt]="">
+              <div class="col abs-center DiaSemana">
+                  {{diaSemana2}}
+              </div>
+              <div class="col abs-center letraP">
+                <div class="col-1 abs-center">
+                    {{dayAux1.main.temp_max | number: '1.0-0'}}°            
+                </div>
+                <div class="col-1 temp2 abs-center">
+                    {{dayAux1.main.temp_min | number: '1.0-0'}}°             
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-4">
+              <img class="img-center " src="{{BASE_URL}}/{{dayAux2.weather[0].icon}}@2x.png" style="width:50px;" [alt]="">
+              <div class="col abs-center DiaSemana">
+                  {{diaSemana3}}
+              </div>
+              <div class="col abs-center letraP">
+                <div class="col-1 abs-center">
+                    {{dayAux2.main.temp_max | number: '1.0-0'}}°            
+                </div>
+                <div class="col-1 temp2 abs-center">
+                    {{dayAux2.main.temp_min | number: '1.0-0'}}°             
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

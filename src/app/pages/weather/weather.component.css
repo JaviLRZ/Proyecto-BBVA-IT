@@ -1,0 +1,55 @@
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-center{
+    display:block;
+    margin:auto;
+}
+
+
+.box{
+    background-color: #082145;
+    border-radius: 40px;
+    margin-top: 10%;
+}
+
+.marginBoxTop{
+    padding-top: 40px;
+}
+
+.marginBoxBot{
+    padding-bottom: 40px!important;
+}
+
+.ciudad{
+    font-size: x-large;
+    color: cyan;
+}
+
+.letraP{
+    font-size: small !important;
+    margin-top: 1px;
+}
+
+.letraM{
+    font-size: small !important;
+}
+
+.DiaSemana{
+    color: cyan;
+}
+
+.humidity{
+    color: deepskyblue ;
+}
+
+.temp2{
+    color: darkgrey;
+}
+
+.tempP{
+    font-size: 70px;
+}
